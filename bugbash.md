@@ -65,11 +65,14 @@ All samples implement the Themorstat and TemperatureController models available 
 3. Configure IoT Explorer to find the models and to interact with the device.
 
 Availabe quickstarts and tutorials:
-1. You can test the 5 quickstart with Device SDK  (C, C#, Java, Node, Python)
+
+1. You can test the  quickstart with Device SDK  (C, Node, Python)
 1. You can test the 2 quickstart with Service SDK (Node, Python)
-1. You can also test the 5 Tutorial with multi component devices (C#, Java, Node, Python)
+1. You can also test the Tutorial with multi component devices ( Node, Python)
 
 All quickstarts and tutorials are in the [IoT Plug and Play documentation](https://docs.microsoft.com/en-us/azure/iot-pnp/)
+
+#### EmbeddedC and Azure RTos
 
 You can also test the **Quickstart on Azure RTOS for STM32L475 device**, [download this zip file](https://microsoft-my.sharepoint.com/:u:/p/liydu/ETyQje64iM1Iu_xpWpG8Kp0BxHZJK-QtFPrqjOl_PJdBNA?e=NGGqRl) and follow the instructions in the readme pdf file. 
 
@@ -77,5 +80,5 @@ You can also test the **Quickstart on Azure RTOS for STM32L475 device**, [downlo
 
 Create simulated device and solution from scratch
 
-- Follow the instructions in this [deck](https://microsoft.sharepoint.com/:p:/t/PnPCross-TeamCore/Ed9pGHB_AaxIgisKioEHSygB2mADMo2vPSQJZK0lKBnFKQ?e=VZ1ztQ) to create your own simulated device and custom solution from scratch.
+- You can follow the instructions in this [deck](https://microsoft.sharepoint.com/:p:/t/PnPCross-TeamCore/Ed9pGHB_AaxIgisKioEHSygB2mADMo2vPSQJZK0lKBnFKQ?e=VZ1ztQ) to create your own simulated device and custom solution from scratch.
 - The instructions in that deck are specific to C# but can be generalized to the language of your choice as needed.

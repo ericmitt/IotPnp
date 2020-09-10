@@ -11,7 +11,7 @@ This bug bash is focused on the  IoT Hub features, SDKs, and tooling. We have qu
 
 - Use the teams channel [PnP GA BugBash](https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2I2NDc5OGItZmU4MC00MWU4LWE1MTQtNDI2YWE0MTlmZmYx%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22a43f0cf6-a7bc-4985-aa0b-37503f8ea92a%22%7d) to ask for help. There will be team members answering questions during the BugBash.
 
-- If you have bugs or feature request, please use this [Bug Template](https://msazure.visualstudio.com/One/_workitems/create/Bug?templateId=221e542f-3428-49ba-951b-5ba1dce3f9a9&ownerId=1e65a829-00c0-4dc9-8088-d41678a0d033). You can query existing bugs in this [PnP BugBash Query](https://msazure.visualstudio.com/One/_queries/query-edit/07523176-81f2-4eb3-a795-8a483cd30310/)
+- If you have bugs or feature request, please use this [Bug Template](https://msazure.visualstudio.com/One/_workitems/create/Bug?templateId=588f0905-1848-4c0a-9525-8e0be8cae7f0&ownerId=f0be8f47-90b7-4440-852e-4d5401b257cf). You can query existing bugs in this [PnP BugBash Query](https://msazure.visualstudio.com/One/_queries/query-edit/07523176-81f2-4eb3-a795-8a483cd30310/)
 
 ### Getting started, environment and tooling
 
@@ -19,13 +19,11 @@ This bug bash is focused on the  IoT Hub features, SDKs, and tooling. We have qu
 
 - The pnp docs are available URL: [IoT Plug and Play documentation](https://docs.microsoft.com/en-us/azure/iot-pnp/). To provide feedback use this [PR in docs](https://github.com/MicrosoftDocs/azure-docs-pr/pull/120981), your github account must be registered in the MicrosoftDocs org.
 
-
-
 #### IoT Hub
 
-- The required hub version is only available in the following regions: canary (EastUS2EUAP, CentralUSEUAP) and production (ESD 1-4). For Canary either use a Canary enabled subscription to create an IoT Hub or request access to the `IOTPNP_TEST_BY_MAIN` subscription, via the Teams channel mentioned above.
+- The required hub version is only available in the following regions: canary (EastUS2EUAP, CentralUSEUAP). For Canary either use a Canary enabled subscription to create an IoT Hub or request access to the `IOTPNP_TEST_BY_MAIN` subscription, via the Teams channel mentioned above.
 - Create S1 IoTHub in any of these regions to get started.
-- Use the latest API version: 2020-05-31-preview
+- Use the latest API version: 2020-09-30
 
 >NOTE: All hubs created in the `IOTPNP_TEST_BY_MAIN` subscription will be removed after the bug bash. We recommend using your own subscription if you'd want to keep using your IoT Hub long term.
 
@@ -47,7 +45,7 @@ To create the hub from the portal make sure you select the right subscription, r
 The DTDL v2 Spec can be found at [https://aka.ms/dtdl](https://aka.ms/dtdl) can be used as a reference for the language. Use the [samples](https://github.com/Azure/opendigitaltwins-dtdl/tree/master/DTDL/v2/samples) we've provided to get started.
 
 - [DTDL VS Code extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-dtdl)
-- [DTDL VS 2019 extension](https://github.com/rido-min/pnp-summer-bugbash/releases/tag/1)
+- [DTDL VS 2019 extension](https://marketplace.visualstudio.com/items?itemName=vsc-iot.vs16dtdllanguagesupport)
 
 #### PnP related tools
 

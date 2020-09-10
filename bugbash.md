@@ -1,28 +1,29 @@
 <!-- markdownlint-disable MD033 -->
-# IoT Plug and Play Samples Bug Bash instructions for the Summer Refresh 2020 release
+# IoT Plug and Play Samples Bug Bash instructions for the GA Sept 30th 2020 release
 
 ## Intro
 
-IoT Plug and Play Summer Refresh is the Public Preview Refresh leading upto GA later this year.
+IoT Plug and Play will be GA the Sept 30th 2020.
 
-This bug bash is focused on the new IoT Hub features, SDKs, and tooling. We have quickstarts in various languages ready, for device and service scenarios - with more languages and advanced tutorials coming soon.
+This bug bash is focused on the  IoT Hub features, SDKs, and tooling. We have quickstarts in various languages ready, for device and service scenarios.
 
 ### BugBash support and feedback
 
-- Use the teams channel [PnP Public Preview BugBash](https://teams.microsoft.com/l/channel/19%3a0b9d0f166a3d41c69ce90fcca7631962%40thread.skype/PnP%2520Public%2520Preview?groupId=dcc1ac84-f476-4c96-8034-b2d77e54c8bf&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47) to ask for help. There will be team members answering questions during the BugBash.
+- Use the teams channel [PnP GA BugBash](https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2I2NDc5OGItZmU4MC00MWU4LWE1MTQtNDI2YWE0MTlmZmYx%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22a43f0cf6-a7bc-4985-aa0b-37503f8ea92a%22%7d) to ask for help. There will be team members answering questions during the BugBash.
+
 - If you have bugs or feature request, please use this [Bug Template](https://msazure.visualstudio.com/One/_workitems/create/Bug?templateId=221e542f-3428-49ba-951b-5ba1dce3f9a9&ownerId=1e65a829-00c0-4dc9-8088-d41678a0d033). You can query existing bugs in this [PnP BugBash Query](https://msazure.visualstudio.com/One/_queries/query-edit/07523176-81f2-4eb3-a795-8a483cd30310/)
 
 ### Getting started, environment and tooling
 
 #### Docs
 
-- The pnp docs are available in the staging URL: [IoT Plug and Play documentation](https://review.docs.microsoft.com/en-us/azure/iot-pnp/overview-iot-plug-and-play?branch=pr-en-us-120981). To provide feedback use this [PR in docs](https://github.com/MicrosoftDocs/azure-docs-pr/pull/120981), your github account must be registered in the MicrosoftDocs org.
+- The pnp docs are available URL: [IoT Plug and Play documentation](https://docs.microsoft.com/en-us/azure/iot-pnp/). To provide feedback use this [PR in docs](https://github.com/MicrosoftDocs/azure-docs-pr/pull/120981), your github account must be registered in the MicrosoftDocs org.
 
-> Not all the articles have been updated, please do not provide feedback on articles not updated in July.
+
 
 #### IoT Hub
 
-- The required hub version is only available in the following regions: canary (EastUS2EUAP, CentralUSEUAP) and production (Japan East, Central US and North Europe). For Canary either use a Canary enabled subscription to create an IoT Hub or request access to the `IOTPNP_TEST_BY_MAIN` subscription, via the Teams channel mentioned above.
+- The required hub version is only available in the following regions: canary (EastUS2EUAP, CentralUSEUAP) and production (ESD 1-4). For Canary either use a Canary enabled subscription to create an IoT Hub or request access to the `IOTPNP_TEST_BY_MAIN` subscription, via the Teams channel mentioned above.
 - Create S1 IoTHub in any of these regions to get started.
 - Use the latest API version: 2020-05-31-preview
 
@@ -52,7 +53,8 @@ The DTDL v2 Spec can be found at [https://aka.ms/dtdl](https://aka.ms/dtdl) can 
 
 Tools available as internal previews are:
 
-- [IoT Model Repository](https://canary.iotmodels.trafficmanager.net/)
+There is no Model repository for GA, this will land later.
+
 - [Azure IoT Explorer](https://github.com/YingXue/azure-iot-explorer/releases/tag/PnpSummerRefresh-0709) (use bugbash.Azure.IoT.Explorer.preview.0.11.1.msi
 )
 
@@ -63,14 +65,13 @@ All samples implement the Themorstat and TemperatureController models available 
 1. Prepare source code for each language.
 2. Create a device and provide the connection string.
 3. Configure IoT Explorer to find the models and to interact with the device.
-4. Note that all the sample code are in the branch **pnp-preview-refresh** in each repo.
 
 Availabe quickstarts and tutorials:
 1. You can test the 5 quickstart with Device SDK  (C, C#, Java, Node, Python)
 1. You can test the 2 quickstart with Service SDK (Node, Python)
 1. You can also test the 5 Tutorial with multi component devices (C#, Java, Node, Python)
 
-All quickstarts and tutorials are in the [IoT Plug and Play documentation](https://review.docs.microsoft.com/azure/iot-pnp/?branch=pr-en-us-121912)
+All quickstarts and tutorials are in the [IoT Plug and Play documentation](https://docs.microsoft.com/en-us/azure/iot-pnp/)
 
 You can also test the **Quickstart on Azure RTOS for STM32L475 device**, [download this zip file](https://microsoft-my.sharepoint.com/:u:/p/liydu/ETyQje64iM1Iu_xpWpG8Kp0BxHZJK-QtFPrqjOl_PJdBNA?e=NGGqRl) and follow the instructions in the readme pdf file. 
 

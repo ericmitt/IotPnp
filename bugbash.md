@@ -74,7 +74,15 @@ All quickstarts and tutorials are in the [IoT Plug and Play documentation](https
 
 #### EmbeddedC and Azure RTos
 
-You can also test the **Quickstart on Azure RTOS for STM32L475 device**, [download this zip file](https://microsoft-my.sharepoint.com/:u:/p/liydu/ETyQje64iM1Iu_xpWpG8Kp0BxHZJK-QtFPrqjOl_PJdBNA?e=NGGqRl) and follow the instructions in the readme pdf file. 
+You can also test the **Quickstart on Azure RTOS for hardware we support**, [download this zip file based on the hardware and IDE](https://microsoft-my.sharepoint.com/:f:/p/liydu/EjI0F-b7aLdNhkT6AGnlvh4B9xixZzjN77CVO1zWZSNp4Q?e=F6pbWn) and follow the instructions in the readme pdf file.
+
+List of hardware:
+- ST STM32F746G Discovery Kit
+- NXP i.MX RT1060 EVK
+- Microchip SAM E54 Xplained Pro EVK
+- ST STM32L4+ Discovery Kit IoT Node / ST STM32L475 Discovery Kit IoT Node
+
+Note: If you do not have device we support, [please use our x86 sample zip](https://microsoft-my.sharepoint.com/:u:/p/liydu/EelTa3DrQuxCnqcnVWYp6yABb1Tf7W3krLzsiSpYCE6FTg?e=PyKCSK).
 
 ### Option 2. Exploratory testing
 

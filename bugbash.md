@@ -18,6 +18,10 @@ This bug bash is focused on the  IoT Hub features, SDKs, and tooling. We have qu
 #### Docs
 
 - The pnp docs are available URL: [IoT Plug and Play documentation](https://review.docs.microsoft.com/en-us/azure/iot-pnp/?branch=pr-en-us-129259). To provide feedback use this [PR in docs](https://github.com/MicrosoftDocs/azure-docs-pr/pull/120981), your github account must be registered in the MicrosoftDocs org.
+- Reviewers can use the PR to leave feedback. You could also leave docs feedback in the teams channel and we'll collate it after the bash.
+
+To access the PR, you must join the MicrosoftDocs organization. Self-service instructions are [here](https://review.docs.microsoft.com/en-us/help/contribute/contribute-get-started-setup-github)
+
 
 #### IoT Hub
 

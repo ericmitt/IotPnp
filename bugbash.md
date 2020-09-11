@@ -3,7 +3,7 @@
 
 ## Intro
 
-IoT Plug and Play will be GA the Sept 30th 2020.
+IoT Plug and Play Platform, SDK and tools will be GA the Sept 30th 2020.
 
 This bug bash is focused on the  IoT Hub features, SDKs, and tooling. We have quickstarts in various languages ready, for device and service scenarios.
 

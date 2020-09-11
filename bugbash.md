@@ -56,6 +56,7 @@ There is no Model repository for GA, this will land later.
 
 - [Azure IoT Explorer]( https://github.com/YingXue/azure-iot-explorer/releases/tag/v0.11.5) (use Azure.IoT.Explorer.preview.0.11.5.msi)
  See more about IoT Explorer in our [documentation](https://docs.microsoft.com/en-us/azure/iot-pnp/howto-use-iot-explorer#use-azure-iot-explorer)
+- [Model Parser] (https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-model-parser) The parser is available in NuGet.org with the ID: Microsoft.Azure.DigitalTwins.Parser.
 
 ## Option 1. Review and run SDK samples
 
@@ -67,13 +68,14 @@ All samples implement the Themorstat and TemperatureController models available 
 
 Availabe quickstarts and tutorials:
 
-1. You can test the  quickstart with Device SDK  (C, Node, Python)
-1. You can test the 2 quickstart with Service SDK (Node, Python)
-1. You can also test the Tutorial with multi component devices ( Node, Python)
+1. You can test the 5 quickstart with Device SDK  (C, Node, Python, C# and Java)
+1. You can test the 4 quickstart with Service SDK (Node, Python, C# and Java)
+1. You can also test the 6 Tutorial with multi component devices ( all lang + MQTT)
+1. Test and use the DTDL Model Parser (C# only, [see this sample](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-model-parser))
 
 All quickstarts and tutorials are in the [IoT Plug and Play documentation](https://docs.microsoft.com/en-us/azure/iot-pnp/)
 
-**Note** We encourage you to use the samples with DPS connection, as it is the latest feature added in the samples and this will prepare a smooth integration with IoT Central soon...
+**Note** We encourage you to use the samples with DPS connection, if you use Node Python or C this will help to prepare a smooth integration with IoT Central soon...
 
 #### EmbeddedC and Azure RTOS
 

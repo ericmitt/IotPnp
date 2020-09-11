@@ -59,8 +59,18 @@ Tools available as internal previews are:
 There is no Model repository for GA, this will land later.
 
 - [Azure IoT Explorer]( https://github.com/YingXue/azure-iot-explorer/releases/tag/v0.11.5) (use Azure.IoT.Explorer.preview.0.11.5.msi)
- See more about IoT Explorer in our [documentation](https://docs.microsoft.com/en-us/azure/iot-pnp/howto-use-iot-explorer#use-azure-iot-explorer)
-- [Model Parser] (https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-model-parser) The parser is available in NuGet.org with the ID: Microsoft.Azure.DigitalTwins.Parser.
+ See more about IoT Explorer in our [documentation](https://review.docs.microsoft.com/en-us/azure/iot-pnp/?branch=pr-en-us-129259/howto-use-iot-explorer#use-azure-iot-explorer)
+
+- [Model Parser] (https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-model-parser) The parser is available in NuGet.org with the ID: Microsoft.Azure.DigitalTwins.Parser. For the bugbash we have an internal version: GA Release Candidate, 3.12.4,  available via the NuGet feed:
+
+https://dev.azure.com/azure-iot-pnp/azure-iot-pnp-libraries/_packaging?_a=package&feed=azure.iot.pnp.libraries&package=Microsoft.Azure.DigitalTwins.Parser&version=3.12.4&protocolType=NuGet 
+
+**Note**
+
+This package corresponds to the following commit on the next_generation branch of the parser library:
+
+https://github.com/Azure/azure-iot-digitaltwin-libraries/commit/f7c732020b2675bf5448f8d655f0992f58cd0956
+
 
 ## Option 1. Review and run SDK samples
 

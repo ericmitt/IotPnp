@@ -25,9 +25,10 @@ To access the PR, you must join the MicrosoftDocs organization. Self-service ins
 
 #### IoT Hub
 
-- The required hub version is only available in the following regions: canary (EastUS2EUAP, CentralUSEUAP). For Canary either use a Canary enabled subscription to create an IoT Hub or request access to the `IOTPNP_TEST_BY_MAIN` subscription, via the Teams channel mentioned above.
+- The required hub version is only available in the following regions: canary (**EastUS2EUAP**). For Canary either use a Canary enabled subscription to create an IoT Hub or request access to the `IOTPNP_TEST_BY_MAIN` subscription, via the Teams channel mentioned above.
 - Create S1 IoTHub in any of these regions to get started.
 - FYI, this last version use API version: 2020-09-30
+- 9/11 CentralUSEUAP looks to have a bug, please use EastUS2EUAP
 
 >NOTE: All hubs created in the `IOTPNP_TEST_BY_MAIN` subscription will be removed after the bug bash. We recommend using your own subscription if you'd want to keep using your IoT Hub long term.
 

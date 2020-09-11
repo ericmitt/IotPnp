@@ -77,6 +77,17 @@ All quickstarts and tutorials are in the [IoT Plug and Play documentation](https
 
 **Note** We encourage you to use the samples with DPS connection, if you use Node Python or C this will help to prepare a smooth integration with IoT Central soon...
 
+**For Python and Node** use these rc packages available for the bugbash.
+
+Python
+https://pypi.org/project/azure-iot-hub/2.2.2rc0/
+https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-hub/samples
+
+Node
+https://www.npmjs.com/package/azure-iothub/v/1.13.0-pnp-rc.0
+https://github.com/Azure/azure-iot-sdk-node/tree/master/service/samples/javascript
+
+
 #### EmbeddedC and Azure RTOS
 
 You can also test the **Quickstart on Azure RTOS for STM32L475 device**, [download this zip file](https://github.com/ericmitt/IotPnp/AzureRTOS_GA_Bugbash.zip) and follow the instructions in the readme pdf file.

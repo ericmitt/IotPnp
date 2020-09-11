@@ -23,7 +23,7 @@ This bug bash is focused on the  IoT Hub features, SDKs, and tooling. We have qu
 
 - The required hub version is only available in the following regions: canary (EastUS2EUAP, CentralUSEUAP). For Canary either use a Canary enabled subscription to create an IoT Hub or request access to the `IOTPNP_TEST_BY_MAIN` subscription, via the Teams channel mentioned above.
 - Create S1 IoTHub in any of these regions to get started.
-- Use the latest API version: 2020-09-30
+- FYI, this last version use API version: 2020-09-30
 
 >NOTE: All hubs created in the `IOTPNP_TEST_BY_MAIN` subscription will be removed after the bug bash. We recommend using your own subscription if you'd want to keep using your IoT Hub long term.
 
@@ -69,7 +69,7 @@ All samples implement the Themorstat and TemperatureController models available 
 Availabe quickstarts and tutorials:
 
 1. You can test the 5 quickstart with Device SDK  (C, Node, Python, C# and Java)
-1. You can test the 4 quickstart with Service SDK (Node, Python, C# and Java)
+1. You can test the 2 quickstart with Service SDK (Node, Python)
 1. You can also test the 6 Tutorial with multi component devices ( all lang + MQTT)
 1. Test and use the DTDL Model Parser (C# only, [see this sample](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-model-parser))
 

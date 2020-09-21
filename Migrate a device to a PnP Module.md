@@ -75,7 +75,7 @@ Look in Iot Explorer now for:
 ## Interacting with a device module, from your solution
 
 With the Service SDK, you can retrieve the modelId of a PnP device. It is the same for a module.
-For example you can run the sample created for [thermostat](link)
+For example you can run the sample created for Service SDK [thermostat](link)...
 
 
 ## Make this generic Module a PnP Edge Module

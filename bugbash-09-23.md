@@ -12,11 +12,14 @@ We'll hope you will have fun with:
 
 1. C# and Java device PnP samples
 1. C# and Java service PnP samples
-1. C# sample of IoT MQTT Bridge 
+1. C# Model Parser
 1. C# generic PnP Module
 1. C# Edge PnP Module
 
-If you are more welling to test other languages or sample on constrained device, please have a look at the [previous bugbash instruction](bugbash-09-11.md) (Azure RTOS, Embedde C, C SDK ...)
+If you are more welling to test other languages or sample on constrained device, please have a look at the [previous bugbash instruction](bugbash-09-11.md) (Azure RTOS, Embedded C, C SDK ...)
+
+Note that we have now **C sample of IoT MQTT Bridge** 
+
 
 ## BugBash support and feedback
 
@@ -40,18 +43,11 @@ To access the PR, you must join the MicrosoftDocs organization. Self-service ins
 - Create S1 IoTHub in any of these regions to get started.
 - FYI, this last version use API version: 2020-09-30
 
-To create the hub using the `az` CLI replace the **hubname** and **region** and run the script below:
-
-```bash
-az extension add --name azure-iot
-az login
-az account set -s IOTPNP_TEST_BY_MAIN
-az iot hub create --resource-group BugBash --sku S1 --location <Region> --partition-count 4 --name <alias-hub-name>
-```
+To create the hub using the `az` CLI replace follow the [setup instructions in our public doc](https://review.docs.microsoft.com/en-us/azure/iot-pnp/set-up-environment?branch=pr-en-us-130249)
 
 To create the hub from the portal make sure you select the right subscription, region and resource group.
 
-> Note. Make sure you get the IoT Hub connection string to be able to configure IoT explorer.
+Note yor IoT Hub connection string to be able to configure IoT explorer.
 
 #### Digital Twin Definition Language
 
@@ -89,6 +85,16 @@ All samples implement the Themorstat and TemperatureController models available 
 3. Configure IoT Explorer to find the models and to interact with the device.
 
 Focus on Managed languages:
+
+You will find the private packages for this bugbash (PreRelease):
+
+- **C#**, add this feed to your Nuget Package Manager in VisualStudio 2019:
+https://azure-iot-sdks.pkgs.visualstudio.com/azure-iot-sdks/_packaging/AzureIotSdks/nuget/v3/index.json 
+
+- **Java**, Select MAven in this page, and follow the instructions:
+- https://azure-iot-sdks.visualstudio.com/azure-iot-sdks/_packaging?_a=connect&feed=AzureIotSdks 
+
+
 1. You can test the 2 quickstart with Device SDK  (C# and Java)
 1. You can test the 2 new quickstart with Service SDK (C# and Java)
 1. You can also test the 2 Tutorial with multi component devices ( C# and Java)

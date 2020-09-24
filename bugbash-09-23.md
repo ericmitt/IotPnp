@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD033 -->
-# IoT Plug and Play Samples Bug Bashb 9/24
+# IoT Plug and Play Samples Bug Bash 9/24
 
 ## Intro
 

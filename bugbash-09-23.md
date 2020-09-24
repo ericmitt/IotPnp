@@ -1,9 +1,7 @@
 <!-- markdownlint-disable MD033 -->
-# IoT Plug and Play Samples Bug Bash instructions for the GA Sept 30th 2020 release
+# IoT Plug and Play Samples Bug Bashb 9/24
 
 ## Intro
-
-IoT Plug and Play Platform, SDK and tools will be GA the Sept 30th 2020.
 
 This bug bash is focused on the  IoT Hub features, SDKs, and tooling. 
 We have quickstarts in various languages ready, for device and service scenarios but the focus of this edition is **Managed languages**.
@@ -96,6 +94,7 @@ You will find the private packages for this bugbash (PreRelease):
 
 1. You can test the 2 quickstart with Device SDK  (C# and Java)
 1. You can test the 2 new quickstart with Service SDK (C# and Java)
+1. You can test the 2 new quikstart with service (digitaltwin) ( [C#](https://github.com/Azure-Samples/azure-iot-samples-csharp/tree/feature/digitaltwin/iot-hub/Samples/service/DigitalTwinClientSamples) and [Java](https://github.com/Azure/azure-iot-sdk-java/tree/feature/digitaltwin/service/iot-service-samples/digitaltwin-service-samples))
 1. You can also test the 2 Tutorial with multi component devices ( C# and Java)
 1. Test and use the DTDL Model Parser (C# only, [see this sample](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-model-parser))
 1. You can test PnP Module (and PnP Edge Module) following this [tutorial](https://github.com/ericmitt/IotPnp/tree/master/PnP_Module) (This sample and article will be merged post bugbash)

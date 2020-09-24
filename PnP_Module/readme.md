@@ -1,6 +1,7 @@
 # PnP Module tutorial
 
 This Module sample is based on Thermostat sample.
+This sample will be merged after Bugbash into the sample repo.
 
 ## Create the module in IoTExplorer
 
@@ -14,7 +15,14 @@ Create the env variable **IOTHUB_MODULE_CONN_STRING** with the module connection
 
 Look at the Module Twin tab, who display the Json for the twin. Note the absence of modelId.
 
-## configure your environment
+## Configure your environment
+
+Clone this repo: 
+
+```bash
+https://github.com/ericmitt/IotPnp.git 
+
+```
 
 Create the following env variable:
 IOTHUB_CONNECTION_STRING

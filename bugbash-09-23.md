@@ -84,7 +84,7 @@ You will find the private packages for this bugbash (PreRelease):
 
     https://azure-iot-sdks.pkgs.visualstudio.com/azure-iot-sdks/_packaging/AzureIotSdks/nuget/v3/index.json 
 
-- **Java**, Select MAven in this page, and follow the instructions:
+- **Java**, Select Maven in this page, and follow the instructions:
     
     https://azure-iot-sdks.visualstudio.com/azure-iot-sdks/_packaging?_a=connect&feed=AzureIotSdks 
 

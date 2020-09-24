@@ -37,7 +37,7 @@ To access the PR, you must join the MicrosoftDocs organization. Self-service ins
 
 #### IoT Hub
 
-- The required hub version is available for all regions now:
+- The required hub version is now available for **all regions but EastUS and EastUS2**:
 - Create S1 IoTHub in any of these regions to get started.
 - FYI, this last version use API version: 2020-09-30
 

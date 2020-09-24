@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThermostatClient", "Thermostat_client\ThermostatClient.csproj", "{ED82BDD3-8CFC-4204-AA3B-FB77DBC35B4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThermostatService", "Thermostat_service\ThermostatService.csproj", "{621B66E0-5CC7-457A-B16D-83A0A7DCCF71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED82BDD3-8CFC-4204-AA3B-FB77DBC35B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED82BDD3-8CFC-4204-AA3B-FB77DBC35B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED82BDD3-8CFC-4204-AA3B-FB77DBC35B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED82BDD3-8CFC-4204-AA3B-FB77DBC35B4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{621B66E0-5CC7-457A-B16D-83A0A7DCCF71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621B66E0-5CC7-457A-B16D-83A0A7DCCF71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621B66E0-5CC7-457A-B16D-83A0A7DCCF71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621B66E0-5CC7-457A-B16D-83A0A7DCCF71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {171757D1-50F3-414F-8426-6078FD7590C1}
+	EndGlobalSection
+EndGlobal

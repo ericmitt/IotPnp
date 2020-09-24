@@ -95,7 +95,8 @@ You will find the private packages for this bugbash (PreRelease):
 1. You can test the 2 quickstart with Device SDK  (C# and Java)
 1. You can test the 2 new quickstart with Service SDK (C# and Java)
 1. You can test the 2 new quikstart with service (digitaltwin) ( [C#](https://github.com/Azure-Samples/azure-iot-samples-csharp/tree/feature/digitaltwin/iot-hub/Samples/service/DigitalTwinClientSamples) and [Java](https://github.com/Azure/azure-iot-sdk-java/tree/feature/digitaltwin/service/iot-service-samples/digitaltwin-service-samples))
-1. You can also test the 2 Tutorial with multi component devices ( C# and Java)
+1. You can test our latest [Python service sample](https://github.com/ericmitt/IotPnp/blob/master/pythonRegistryManagerPnP.md) (will be merged post bugbash)
+1. You can also test the 2 Tutorials with multi component devices ( C# and Java)
 1. Test and use the DTDL Model Parser (C# only, [see this sample](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-model-parser))
 1. You can test PnP Module (and PnP Edge Module) following this [tutorial](https://github.com/ericmitt/IotPnp/tree/master/PnP_Module) (This sample and article will be merged post bugbash)
 

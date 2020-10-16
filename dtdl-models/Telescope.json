@@ -1,0 +1,130 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:example:Telescope;1",
+  "@type": "Interface",
+  "displayName": "Telescope",
+  "description": "Motorized telescope with advanced optic sensors.",
+  "contents": [    {
+      "@type": [
+        "Telemetry",
+         "Longitude"
+      ],
+      "name": "overallstatus",
+      "displayName": "Overall Status",
+      "description": "Overall status",
+      "schema": {
+        "@type":"Object",
+        "@id"  :"dtmi:com:example:Telescope:TelescopeStatus;1", 
+      "fields": [
+        {
+            "name": "overallstatus",
+            "schema": "string"
+        },
+        {
+            "name": "pointingAt",
+            "schema": "string"
+        },
+        {
+            "name": "z",
+            "schema": "double"
+        }
+    ]
+    }
+  },
+    {
+      "@type": "Property",
+      "name": "GPSPosition",
+      "displayName": "GPS Position",
+      "description": "Position of the telescope on Earth",
+      "schema": "point"
+    },
+    {
+      "@type": "Property",
+      "displayName": "Date and Time",
+      "description": "Date and time at telescope latitude.",
+      "name": "DateTime",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "displayName": "Altitude",
+      "description": "Altitude of the telescope",
+      "name": "Altitude",
+      "schema": "integer"
+    },
+    
+    {
+      "@type": "Property",
+      "name": "serialNumber",
+      "displayName": "Serial Number",
+      "description": "Serial number of the telescope.",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "Find_North_Celestial_Pole",
+      "displayName": "NCP",
+      "description": "Realign to north celestial pole."
+     },
+     {
+      "@type": "Command",
+      "name": "FollowObject",
+      "displayName": "NCP",
+      "description": "Realign to north celestial pole."
+     },
+     {
+      "@type": "Command",
+      "name": "PointTo",
+      "displayName": "Point To",
+      "description": "Point Telescope to point.",
+      "request": {
+        "name": "StellarPosition",
+        "displayName": "Stellar Position to point at",
+        "description": "Point in the sky to look at.",
+        "schema": "dtmi:com:example:Telescope:CelestialCoord;1"
+      }
+     },
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:example:Camera;1",
+      "name": "camera",
+      "displayName": "camera",
+      "description": "Camera optic of the telescope."
+    },
+    {
+      "@type" : "Component",
+      "schema": "dtmi:com:example:CameraIR;1",
+      "name": "cameraIR",
+      "displayName": "CameraIR",
+      "description": "Camera IR of the telescope."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+      "name": "deviceInformation",
+      "displayName": "Device Information interface",
+      "description": "Optional interface with basic device hardware information."
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:com:example:Telescope:CelestialCoord;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "hours",
+          "schema": "double"
+      },
+      {
+          "name": "minutes",
+          "schema": "double"
+      },
+      {
+          "name": "seconds",
+          "schema": "double"
+      }
+      ]
+    }
+  ]
+   
+}

@@ -1,0 +1,71 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:com:example:Camera;1",
+    "@type": "Interface",
+    "displayName": "Camera",
+    "description": "Take picture or movie on normal light",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "Focal",
+            "schema":"double",
+            "displayName": "Focal of the camera",
+            "description": "Focal of the camera",
+            "writable": true 
+        },
+        {
+            "@type": "Property",
+            "name": "Speed",
+            "schema": "double",
+            "description": "Opening speed of the camera",
+            "displayName": "Opening Speed",
+            "writable": true
+        },
+        {
+            "@type": "Command",
+            "name": "TakePicture",
+            "description": "Take a picture looking at the current point position",
+            "displayName": "Take a picture"
+        },
+        {
+            "@type": "Command",
+            "name": "RecordMovie",
+            "request": {
+                "name": "duration",
+                "description": "duration is seconds",
+                "schema": "long"
+            },
+            "description": "Record a movie of duration seconds",
+            "displayName": "Record a movie"
+        },
+        {
+            "@type": "Property",
+            "name": "SerialNumber",
+            "schema": "string"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "status",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                {
+                "name": "off",
+                "displayName": "Camera not ready",
+                "enumValue": 1
+                },
+                {
+                "name": "on",
+                "displayName": "Camera ready to record or shoot",
+                "enumValue": 2
+                }
+                ]
+            }   
+        }
+
+    ]
+}
+
+
+

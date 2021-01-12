@@ -1,0 +1,212 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:example:Telescope;1",
+  "@type": "Interface",
+  "displayName": "Telescope",
+  "description": "Motorized telescope with two cameras (Visible and IR). The telescope model is a sample to illustrate some advanced PnP concepts like complex type, array, long/async call etc",
+  "contents": [
+      {"@type": "Telemetry",
+      "name": "overallStatus",
+      "displayName": "Overall Status",
+      "description": "Overall status",
+      "schema": {
+        "@type":"Object",
+        "@id"  :"dtmi:com:example:Telescope:TelescopeStatus;1", 
+      "fields": 
+            [
+              {
+                  "name": "status",
+                  "schema": {
+                    "@type": "Enum",
+                    "valueSchema": "integer",
+                    "enumValues": [
+                        {
+                            "name": "offline",
+                            "displayName": "Offline",
+                            "enumValue": 1
+                        },
+                        {
+                          "name": "Pointing",
+                          "displayName": "Pointing",
+                          "enumValue": 2
+                        },
+                        {
+                          "name": "Calibrating",
+                          "displayName": "Calibrating",
+                          "enumValue": 3
+                        },
+                        {
+                          "name": "Following",
+                          "displayName": "Following",
+                          "enumValue": 4
+                        }
+                    ]
+                }
+              },
+              {
+                  "name": "pointingAt",
+                  "schema": "dtmi:com:example:Telescope:CelestialCoordinate;1"
+              },
+                {
+                    "name": "AtmosphericPressure",
+                    "schema": "double",
+                    "description": "High atmospheric pressure give better quality image"
+                },
+                {
+                  "name": "TemperatureDelta",
+                  "schema": "double",
+                  "description": "Exterior temperature compared to interior Temperature, has an impact on the image quality"
+                }
+            ]
+      }
+    },
+      {
+        "@type": "Property",
+        "name": "gpsPosition",
+        "displayName": "GPS Position",
+        "description": "Position of the telescope on Earth",
+        "schema": {
+          "@type":"Object",
+          "@id"  :"dtmi:com:example:Telescope:GPSCoord;1", 
+        "fields": 
+              [
+              {
+                "name": "latitude",
+                "schema": "double"
+              },
+              {
+                "name": "longitude",
+                "schema": "double"
+              }
+            ]
+          }
+      },
+      {
+        "@type": "Property",
+        "displayName": "UTC Time",
+        "description": "UTC Time at telescope latitude.",
+        "name": "utcTime",
+        "schema": "dateTime",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": "Altitude",
+        "description": "Altitude of the telescope",
+        "name": "altitude",
+        "schema": "integer",
+        "writable": true
+      },
+      
+      {
+        "@type": "Property",
+        "name": "serialNumber",
+        "displayName": "Serial Number",
+        "description": "Serial number of the telescope.",
+        "schema": "string"
+      },
+      {
+        "@type": "Command",
+        "name": "northPoleCalibrate",
+        "displayName": "North Pole Calibration",
+        "description": "Realign to north celestial pole."
+      },
+      {
+        "@type": "Command",
+        "name": "followObject",
+        "displayName": "Follow Object",
+        "description": "Follow an object in the sky.",
+        "request": {
+          "name": "nameOfObject",
+          "displayName": "Object name to follow",
+          "description": "Follow an object in the sky ( a planet, moon, ISS...).",
+          "schema": "string"
+        }
+      },
+      {
+        "@type": "Command",
+        "name": "PointTo",
+        "displayName": "Point To",
+        "description": "Point Telescope to a specific Celestial Coordinate.",
+        "request": {
+          "name": "StellarPosition",
+          "displayName": "Stellar Position to point at",
+          "description": "Point (Celestial Coordinate) in the sky to look at.",
+          "schema": "dtmi:com:example:Telescope:CelestialCoordinate;1"
+        }
+      },
+      {
+        "@type": "Command",
+        "name": "PointToArray",
+        "displayName": "Point To Array of CC",
+        "description": "Point Telescope to an array of Celestial Coordinate. For each take a picture",
+        "request": {
+          "name": "ArrayStellarPosition",
+          "displayName": "Stellar Position to point at",
+          "description": "Point in the sky to look at.",
+          "schema": "dtmi:com:example:Telescope:ArrayCC;1"
+        }
+      },
+      {
+        "@type" : "Component",
+        "schema": "dtmi:com:example:Camera;1",
+        "name": "camera",
+        "displayName": "camera",
+        "description": "Camera optic of the telescope."
+      },
+      {
+        "@type" : "Component",
+        "schema": "dtmi:com:example:CameraIR;1",
+        "name": "cameraIR",
+        "displayName": "CameraIR",
+        "description": "Camera IR of the telescope."
+      },
+      {
+        "@type": "Component",
+        "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+        "name": "deviceInformation",
+        "displayName": "Device Information interface",
+        "description": "Optional interface with basic device hardware information."
+      }
+    ],
+    "schemas": [
+      {
+        "@type": "Array",
+        "elementSchema": "dtmi:com:example:Telescope:CelestialCoordinate;1",
+        "@id": "dtmi:com:example:Telescope:ArrayCC;1"
+      },
+      {
+        "@id": "dtmi:com:example:Telescope:CelestialCoordinate;1",
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "rightasc",
+            "schema": "dtmi:com:example:Telescope:Angle;1"
+        },
+        {
+            "name": "declinaison",
+            "schema": "dtmi:com:example:Telescope:Angle;1"
+        }
+        ]
+      },
+      {
+        "@id": "dtmi:com:example:Telescope:Angle;1",
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "hours",
+            "schema": "double"
+        },
+        {
+            "name": "minutes",
+            "schema": "double"
+        },
+        {
+            "name": "seconds",
+            "schema": "double"
+        }
+        ]
+      }
+  ]
+   
+}

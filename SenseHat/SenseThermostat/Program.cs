@@ -15,7 +15,6 @@ namespace SenseThermostat
     class Program
     {
         private static string deviceConnectionString = "";
-
         public static string ModelId = "dtmi:com:example:Thermostat;1";
 
         public static DeviceClient deviceClient = null;

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenseThermostat", "SenseThermostat.csproj", "{605C9EC8-BBE6-4F09-8CB1-4883409B2C8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{605C9EC8-BBE6-4F09-8CB1-4883409B2C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605C9EC8-BBE6-4F09-8CB1-4883409B2C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605C9EC8-BBE6-4F09-8CB1-4883409B2C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605C9EC8-BBE6-4F09-8CB1-4883409B2C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E75F532-8733-45A8-B128-52590487D69C}
+	EndGlobalSection
+EndGlobal

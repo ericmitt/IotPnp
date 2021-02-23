@@ -15,9 +15,9 @@ namespace SenseThermostat
     class Program
     {
         private static string deviceConnectionString = "";
-        public static string ModelId = "dtmi:com:example:Thermostat;1";
+        private static string ModelId = "dtmi:com:example:Thermostat;1";
 
-        public static DeviceClient deviceClient = null;
+        private static DeviceClient deviceClient = null;
         private static double pt_temperature = 0d;
         private static double min_temperature = 0d;
         private static double max_temperature = 0d;
@@ -100,7 +100,7 @@ namespace SenseThermostat
             {
                 maxTemp = max_temperature,
                 minTemp = min_temperature,
-                avgTemp = sumTemperature/numbermeasure,
+                avgTemp = sumTemperature / numbermeasure,
                 startTime = startTime,
                 endTime = DateTime.Now,
             };
@@ -131,7 +131,7 @@ namespace SenseThermostat
                 await deviceClient.UpdateReportedPropertiesAsync(reportedPropertyPending);
                 Console.WriteLine($"Property: Update - {{\"{propertyName}\": {desiredProperties[propertyName]}°C }} is {StatusCode.InProgress}.");
 
-               
+
 
                 string jsonProperty = $"{{ \"{propertyName}\": {{ \"value\": {pt_temperature}, \"ac\": {(int)StatusCode.Completed}, " +
                     $"\"av\": {desiredProperties.Version}, \"ad\": \"Successfully updated target temperature\" }} }}";

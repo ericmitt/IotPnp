@@ -1,0 +1,86 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:example:Humidity;1",
+  "@type": "Interface",
+  "displayName": "Humidity",
+  "description": "Reports current humidity percentage.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Humidity"
+      ],
+      "name": "humidity",
+      "displayName": "Humidity",
+      "description": "Humidity in percentage.",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Property",
+        "Humidity"
+      ],
+      "name": "targetHumidity",
+      "schema": "double",
+      "displayName": "Target Humidity",
+      "description": "Allows to remotely specify the desired target Humidity.",
+      "writable": true
+    },
+    {
+      "@type": [
+        "Property",
+        "Humidity"
+      ],
+      "name": "maxHumiditySinceLastReboot",
+      "schema": "double",
+      "displayName": "Max Humidity since last reboot.",
+      "description": "Returns the max Humidity since last device reboot."
+    },
+    {
+      "@type": "Command",
+      "name": "getMaxMinReport",
+      "displayName": "Get Max-Min report.",
+      "description": "This command returns the max, min and average Humidity from the specified time to the current time.",
+      "request": {
+        "name": "since",
+        "displayName": "Since",
+        "description": "Period to return the max-min report.",
+        "schema": "dateTime"
+      },
+      "response": {
+        "name": "humidityReport",
+        "displayName": "Humidity Report",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "maxHumidity",
+              "displayName": "Max Humidity",
+              "schema": "double"
+            },
+            {
+              "name": "minHumidity",
+              "displayName": "Min Humidity",
+              "schema": "double"
+            },
+            {
+              "name": "avgHumidity",
+              "displayName": "Average Humidity",
+              "schema": "double"
+            },
+            {
+              "name": "startTime",
+              "displayName": "Start Time",
+              "schema": "dateTime"
+            },
+            {
+              "name": "endTime",
+              "displayName": "End Time",
+              "schema": "dateTime"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

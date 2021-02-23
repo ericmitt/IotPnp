@@ -1,0 +1,48 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:example:Gyroscope;1",
+  "@type": "Interface",
+  "displayName": "AngularRate",
+  "description": "Reports current AngularRate.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "AngularRate"
+      ],
+      "name": "angularrate",
+      "displayName": "AngularRate",
+      "description": "AngularRate",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "AngularRateXYZ"
+      ],
+      "name": "angularratexyz",
+      "displayName": "AngularRateXYZ",
+      "description": "AngularRateXYZ",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "X",
+            "displayName": "X AngularRate",
+            "schema": "double"
+          },
+          {
+            "name": "Y",
+            "displayName": "Y AngularRate",
+            "schema": "double"
+          }, 
+          {
+            "name": "Z",
+            "displayName": "Z AngularRate",
+            "schema": "double"
+          } 
+        ] 
+      }
+      }   
+  ]
+}

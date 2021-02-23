@@ -1,0 +1,48 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:example:Inductance;1",
+  "@type": "Interface",
+  "displayName": "Inductance",
+  "description": "Reports current Inductance.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Inductance"
+      ],
+      "name": "inductance",
+      "displayName": "Inductance",
+      "description": "Inductance",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "InductanceXYZ"
+      ],
+      "name": "inductancexyz",
+      "displayName": "InductanceXYZ",
+      "description": "InductanceXYZ",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "X",
+            "displayName": "X inductance",
+            "schema": "double"
+          },
+          {
+            "name": "Y",
+            "displayName": "Y inductance",
+            "schema": "double"
+          }, 
+          {
+            "name": "Z",
+            "displayName": "Z inductance",
+            "schema": "double"
+          } 
+        ] 
+      }
+      }   
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:example:SenseHat;1",
+  "@type": "Interface",
+  "displayName": "SenseHat PnP Models",
+  "description": "Expose SenseHat sensor as PnP components",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "DataSize"
+      ],
+      "name": "workingSet",
+      "displayName": "Working Set",
+      "description": "Current working set of the device memory in KiB.",
+      "schema": "double",
+      "unit": "kibibyte"
+    },
+    {
+      "@type": "Property",
+      "name": "serialNumber",
+      "displayName": "Serial Number",
+      "description": "Serial number of the device.",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "reboot",
+      "displayName": "Reboot",
+      "description": "Reboots the sensors data. Wait for a delay in seconds",
+      "request": {
+        "name": "delay",
+        "displayName": "Delay",
+        "description": "Number of seconds to wait before rebooting the sensors.",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:com:example:Thermostat;1",
+      "name": "thermostat1",
+      "displayName": "Thermostat One",
+      "description": "Thermostat One of Two."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:com:example:Humidity;1",
+      "name": "humidity1",
+      "displayName": "Thermostat Two",
+      "description": "Thermostat Two of Two."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+      "name": "deviceInformation",
+      "displayName": "Device Information interface",
+      "description": "Optional interface with basic device hardware information."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:com:example:Inductance;1",
+      "name": "magneto1",
+      "displayName": "Magnetometer",
+      "description": "Measure inductance."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:com:example:Accelerometer;1",
+      "name": "accelerometer1",
+      "displayName": "Accelerometer",
+      "description": "Measure acceleration."
+    },
+    {
+      "@type": "Component",
+      "schema": "dtmi:com:example:Gyroscope;1",
+      "name": "gyroscope1",
+      "displayName": "Gyroscope",
+      "description": "Measure Gyroscope."
+    }
+  ]
+}

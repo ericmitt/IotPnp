@@ -1,0 +1,48 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:example:Accelerometer;1",
+  "@type": "Interface",
+  "displayName": "Accelerometer",
+  "description": "Reports current Accelerometer.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Acceleration"
+      ],
+      "name": "acceleration",
+      "displayName": "Acceleration",
+      "description": "Acceleration",
+      "schema": "double"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "AccelerationXYZ"
+      ],
+      "name": "accelerationxyz",
+      "displayName": "AccelerationXYZ",
+      "description": "AccelerationXYZ",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "X",
+            "displayName": "X Acceleration",
+            "schema": "double"
+          },
+          {
+            "name": "Y",
+            "displayName": "Y Acceleration",
+            "schema": "double"
+          }, 
+          {
+            "name": "Z",
+            "displayName": "Z Acceleration",
+            "schema": "double"
+          } 
+        ] 
+      }
+      }   
+  ]
+}

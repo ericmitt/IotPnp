@@ -21,28 +21,27 @@ Implement in .net core 3.1, a PnP device who publish temperature to Azure IoT Hu
 1. Install VSTudio (with .NET and .NET Core)
 1. Install VSCode
 1. Clone this [tutorial repo](https://github.com/ericmitt/IotPnp/tree/master/SenseHat)
-1. The solution use 2 nuget package:
+1. The solution use 3 nuget package:
     1. Iot.Device.Bindings
-    1. Azure IoT sdk  
-1. Clone .net IOT Repo (optional, but you'll need their dll: Iot.Device.Bindings.dll)
-1. Clone Azure IoT C# SDK (optional, but you'll need to install the  latest version of the device [SDK](https://www.nuget.org/packages/Microsoft.Azure.Devices/).
+    1. Microsoft.Azure.Devices and Microsoft.Azure.Devices.Client (C# Azure IoT Hub SDK)
+1. Clone .net IOT Repo (optional, as you have the dll via the nuget package)
+1. Clone Azure IoT C# SDK (optional, as you have the dlls via the nuget package [SDK](https://www.nuget.org/packages/Microsoft.Azure.Devices/).
 
 #### On the Azure portal
-Prepare a Hub with a new device
+Prepare a IoT Hub with a new device
 (For example IoTHub42, SenseThermostat)
 
 Note the following:
 1. cnx string for Iot Hub (to be used in IoT Explorer)
 1. cnx string for the Device (to be used in the project code)
 
-
 To do Later: Add and cnx Option for DPS (so we can use the device with IoT Central)
 
 ## Running the senseThermostat sample
 
-Open the Visual Studio solution (SenseThermostat.sln)
-Set your device connection string (program.cs)
-Build your solution (check it is successful)
+Open the Visual Studio solution (SenseThermostat.sln) from your clone.
+Set your device connection string (in program.cs, easy to copy from IoTExplorer)
+Build your solution (check if it is successful)
 Publish your application in a local folder
 1. set the target runtime to : Linux-arm
 1. set the deployemnt mode to : self contained (in case the .net core is not installed on the Pi) 
@@ -53,14 +52,15 @@ Publish your application in a local folder
     scp -r * pi@10.0.0.137:/home/pi/sensethermostat
     ```
 1. On your Pi, open a Terminal
-1. Navigate to the publish folder and run via:
+1. Navigate to the publish folder and run the code via:
 1. ```dotnetcli
    ./SenseThermostat 
    ```
+Voila! your device is connected and send real sensor data to the Hub...
 
 ## Running the SenseHatPnp sample
-Follow the same steps as above but with SenseHatPnP as the by default project:
-1. set the target runtime to : Linux-arm
+Follow the same steps as above but with SenseHatPnP as the default project:
+1. set the target runtime to : **Linux-arm**
 1. set the deployemnt mode to : self contained (in case the .net core is not installed on the Pi) 
     ![as seen in this picture](./Media/cnfg_Publish.jpg    )
 1. copy the publish folder on your Pi
@@ -73,11 +73,13 @@ Follow the same steps as above but with SenseHatPnP as the by default project:
 1. ```dotnetcli
    ./SenseHatPnp 
    ```
-
+Voila! your device is connected and send real sensor data to the Hub...
 
 ## Run and Test with IoT Explorer
 Now that the code is running you can use:
-IoTExplorer to look at the properties, command and telemetry. Note that each component has its own telemetry, that you can see in the IoT Plug and Play tab.
+IoTExplorer to look at the properties, command and telemetry. 
+
+Note that each component has its own telemetry, that you can see in the IoT Plug and Play tab. 
 
 IoTExplorer can resolve models from a local directory, you can specify it in Home|IoT Plug and Play Settings.
 

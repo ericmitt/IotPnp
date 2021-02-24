@@ -1,9 +1,9 @@
-# End to end experience with .NET, Azure IoT and Raspberry PI + SenseHat
+# Plug and Play with .NET core, Azure IoT and Raspberry PI SenseHat
 
-In this experience, we are going to:
+Create a Plug and Play devices with .NET core 3.1 running on Raspberry PI and manipulating real sensors data.
 
-Implement in .net core 3.1, a PnP device who publish temperature to Azure IoT Hub from temperature sensor (SenseHat on RAspberry Pi 3)
-
+Publish temperature to Azure IoT Hub from temperature sensor (SenseThermostat using Thermostat DTDL model)
+Publish 7 sensor data as PnP components (Custom DTDL models) 
 
 ## Setup and pre requisite
 

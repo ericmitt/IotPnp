@@ -38,7 +38,7 @@ Note the following:
 
 To do Later: Add and cnx Option for DPS (so we can use the device with IoT Central)
 
-## Running the code
+## Running the senseThermostat sample
 
 Open the Visual Studio solution (SenseThermostat.sln)
 Set your device connection string (program.cs)
@@ -58,15 +58,44 @@ Publish your application in a local folder
    ./SenseThermostat 
    ```
 
+## Running the SenseHatPnp sample
+Follow the same steps as above but with SenseHatPnP as the by default project:
+1. set the target runtime to : Linux-arm
+1. set the deployemnt mode to : self contained (in case the .net core is not installed on the Pi) 
+    ![as seen in this picture](./Media/cnfg_Publish.jpg    )
+1. copy the publish folder on your Pi
+    You can use scp: 
+    ```dotnetcli
+    scp -r * pi@10.0.0.137:/home/pi/sensehatpnp
+    ```
+1. On your Pi, open a Terminal
+1. Navigate to the publish folder and run via:
+1. ```dotnetcli
+   ./SenseHatPnp 
+   ```
 
 
+## Run and Test with IoT Explorer
+Now that the code is running you can use:
+IoTExplorer to look at the properties, command and telemetry. Note that each component has its own telemetry, that you can see in the IoT Plug and Play tab.
 
-Show/explain the code
-    .net iot usage
-    design a pnp model
-    azure iot sdk hub usage
+IoTExplorer can resolve models from a local directory, you can specify it in Home|IoT Plug and Play Settings.
+
+The SenseHatPnP sample list of components in IoT Explorer
+![Component list](./media/iotexplorer01.jpg)
+
+When looking at telemetry, navigate to the component you are interested in and then go to the telemetry tab to start listening:
+![Component list](./media/iotexplorer02.jpg)
 
 
-## Run and Test
-How to run the code produced?
-How to debug this code?
+## Run and Test with TSI
+You can visualize data in TSI.
+First create a TSI instance from the Azure Portal (more detailed steps to come)
+In your TSI Instance, add your IoT Hub as Event Source: 
+
+![Tsi ](./media/tsi01.jpg)
+
+Select your data series and field to be displayed :
+
+![Tsi ](./media/tsi03.jpg)
+

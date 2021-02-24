@@ -1,4 +1,4 @@
-# Plug and Play with .NET core, Azure IoT and Raspberry PI SenseHat
+# Azure IoT Plug and Play with .NET core, Azure IoT and Raspberry PI SenseHat
 
 Create a Plug and Play devices with .NET core 3.1 running on Raspberry PI and manipulating real sensors data.
 

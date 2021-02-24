@@ -82,10 +82,10 @@ IoTExplorer to look at the properties, command and telemetry. Note that each com
 IoTExplorer can resolve models from a local directory, you can specify it in Home|IoT Plug and Play Settings.
 
 The SenseHatPnP sample list of components in IoT Explorer
-![Component list](./media/iotexplorer01.jpg)
+![Component list](./Media/iotexplorer01.jpg)
 
 When looking at telemetry, navigate to the component you are interested in and then go to the telemetry tab to start listening:
-![Component list](./media/iotexplorer02.jpg)
+![Component list](./Media/iotexplorer02.jpg)
 
 
 ## Run and Test with TSI
@@ -93,9 +93,9 @@ You can visualize data in TSI.
 First create a TSI instance from the Azure Portal (more detailed steps to come)
 In your TSI Instance, add your IoT Hub as Event Source: 
 
-![Tsi ](./media/tsi01.jpg)
+![Tsi ](./Media/tsi01.jpg)
 
 Select your data series and field to be displayed :
 
-![Tsi ](./media/tsi03.jpg)
+![Tsi ](./Media/tsi03.jpg)
 

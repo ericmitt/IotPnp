@@ -27,7 +27,7 @@ Publish 7 sensor data as PnP components (Custom DTDL models)
 1. Clone .net IOT Repo (optional, as you have the dll via the nuget package)
 1. Clone Azure IoT C# SDK (optional, as you have the dlls via the nuget package [SDK](https://www.nuget.org/packages/Microsoft.Azure.Devices/).
 
-#### On the Azure portal
+### On the Azure portal
 Prepare a IoT Hub with a new device
 (For example IoTHub42, SenseThermostat)
 

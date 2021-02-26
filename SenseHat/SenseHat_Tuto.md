@@ -9,7 +9,7 @@ Publish 7 sensor data as PnP components (Custom DTDL models)
 
 ### On the Device
 
-1. Setup System on your Raspberry Pi3, as usual following this steps : [see the official raspberry pages](https://www.raspberrypi.org/software/) 
+1. Setup System on your Raspberry Pi (version 3+ minimum to have I2c bus support), as usual following this steps : [see the official raspberry pages](https://www.raspberrypi.org/software/) 
 1. Plug your SenseHat on your Raspberry PI, an start it with screen, mouse and keyboard connected
 1. Enable, in Raspberry Pi Configuration: SSH, I2C 
 1. create your dev/test environment (create a folder "SenseHat" that will receive copy of your work)

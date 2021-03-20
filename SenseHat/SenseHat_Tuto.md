@@ -93,9 +93,9 @@ You can visualize data in TSI.
 First create a TSI instance from the Azure Portal (more detailed steps to come)
 In your TSI Instance, add your IoT Hub as Event Source: 
 
-![Tsi ](./Media/tsi1.jpg)
+![Tsi ](https://github.com/ericmitt/IotPnp/blob/main/SenseHat/Media/tsi1.JPG) 
 
 Select your data series and field to be displayed :
 
-![Tsi ](./Media/tsi3.jpg)
+![Tsi ](https://github.com/ericmitt/IotPnp/blob/main/SenseHat/Media/tsi3.JPG)
 
